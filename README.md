@@ -16,8 +16,9 @@ You'll need a TeX distribution and `sed` installed.
 Then:
 
 1. Ensure a top-level `.address` file exists in the project directory
-   (alongside this file). It should contain LaTeX content and will be
-   interpolated with `resume.ltx` (via `sed`) during document preparation.
+   (alongside this file). It should contain LaTeX content (so: escape `#`,
+   etc.) and will be interpolated with `resume.ltx` (via `sed`) during
+   document preparation.
 2. Run `make`.
 
 The resulting résumé is written as a PDF to `out/resume.pdf`.
