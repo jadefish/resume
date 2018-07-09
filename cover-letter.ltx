@@ -1,0 +1,55 @@
+\documentclass[12pt,stdletter,dateno]{newlfm}
+\usepackage{url}
+\usepackage[colorlinks=true,linkcolor=urlblue,urlcolor=urlblue]{hyperref}
+\usepackage{color}
+\definecolor{urlblue}{RGB}{48, 122, 219}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+\makeatother
+
+\noHeadline
+\noFootline
+
+\newlfmP{headermarginskip=0pt}
+\newlfmP{sigsize=12pt}
+\newlfmP{dateskipafter=0pt}
+\newlfmP{addrfromphone}
+\newlfmP{addrfromemail}
+\PhrPhone{Phone}
+\PhrEmail{Email}
+
+\namefrom{Nick Miller}
+\addrfrom{
+    \today\\[10pt]
+    :ADDRESS:
+}
+\phonefrom{:PHONE:}
+\emailfrom{\href{mailto:nick@nmiller.info}{nick@nmiller.info}}
+
+\addrto{
+    :ADDRESS-TO:
+}
+
+\greetto{To Whom It May Concern,}
+\closeline{Sincerely,}
+\begin{document}
+\begin{newlfm}
+
+:HEADER:
+
+For the past 15 years, I have been constantly writing code and have loved
+every minute of it. I am a self-starting and motivated developer and am
+always looking for ways to improve myself and my code. I make a point to
+learn something new every day, and constantly challenge myself to step
+outside my comfort zone and solve difficult problems.
+
+:BODY:
+
+Thank you for your consideration. I look forward to hearing from you.
+
+\end{newlfm}
+\end{document}

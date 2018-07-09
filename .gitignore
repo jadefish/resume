@@ -2,4 +2,8 @@
 Thumbs.db
 
 .address
+.phone
+.cl-body
+.cl-addr-to
+.cl-header
 /out
