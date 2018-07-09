@@ -15,10 +15,12 @@ You'll need a TeX distribution and `sed` installed.
 
 Then:
 
-1. Ensure a top-level `.address` file exists in the project directory
-   (alongside this file). It should contain LaTeX content (so: escape `#`,
-   etc.) and will be interpolated with `resume.ltx` (via `sed`) during
+1. Ensure top-level `.address`, `.phone`, `.cl-header`, `.cl-body`, and
+   `.cl-addr-to` files exists in the project directory (alongside this file).
+   These should contain LaTeX content (so: escape `#`, etc.) and will be
+   interpolated with `resume.ltx` and `cover-letter.ltx` (via `sed`) during
    document preparation.
 2. Run `make`.
 
-The resulting résumé is written as a PDF to `out/resume.pdf`.
+The resulting résumé and cover letter are written as PDF documents to
+`out/resume.pdf` and `out/cover-letter.pdf`, respectively.
