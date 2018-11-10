@@ -10,7 +10,7 @@ You'll need a TeX distribution and `sed` installed.
   [TeX Live](http://www.tug.org/texlive).
 * **macOS**: [MacTeX](https://www.tug.org/mactex/) is pretty swell and is
   easily installable via [Homebrew-Cask](https://caskroom.github.io/).
-* **Windows**: I am a fan of [MiKTeX](miktex.org).
+* **Windows**: I am a fan of [MiKTeX](https://miktex.org).
   [TeX Live](http://www.tug.org/texlive) is also available.
 
 Then:
